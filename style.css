@@ -1,0 +1,105 @@
+/* RESET DASAR */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+/* HEADER */
+header {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+/* BANNER (HALAMAN HOME) */
+.banner {
+  background: url("../img/banner.jpg") center / cover no-repeat;
+  height: 300px;
+}
+
+.banner-text {
+  background: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* NAVBAR MANUAL (JIKA ADA HALAMAN TANPA BOOTSTRAP) */
+nav {
+  background-color: #171515;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  padding: 14px 16px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #100f0f;
+}
+
+/* KONTEN */
+.content {
+  padding: 20px;
+  background-color: white;   /* DIUBAH dari biru → putih (lebih rapi) */
+  margin: 20px auto;
+  border-radius: 8px;
+  max-width: 1000px;
+}
+
+/* GALLERY MANUAL (JIKA TIDAK PAKAI BOOTSTRAP CARD) */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* FORM */
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* BUTTON */
+button {
+  padding: 10px 20px;
+  background-color: #0d6efd; /* WARNA BOOTSTRAP PRIMARY */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0b5ed7;
+}
+
+/* FOOTER */
+footer {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 30px;
+}
